@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 .card ul li {
     list-style: none;
     justify-content: space-between;
@@ -38,11 +44,11 @@ body {
 
 * body {
     font-family: 'Roboto', sans-serif;
+    color: #e1e1e6;
 }
 
 #app {
     text-align: center;
-    border: 1px solid yellow;
     width: fit-content;
     padding: 50px;
     margin: 52px auto;
@@ -53,7 +59,7 @@ header {
 }
 
 header h1 {
-    color: white;
+    color: #e1e1e6;
     text-align: center;
     text-transform: uppercase;
 }
@@ -72,7 +78,7 @@ main {
 
 .card h2 {
     border: 1px solid #746615;
-    color: rgb(179, 179, 36);
+    color: rgb(179, 179, 36);   
     padding: 8px 16px;
     border-radius: 6px;
     display: flex;
