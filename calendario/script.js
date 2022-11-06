@@ -18,25 +18,20 @@ function createCard(date, day, games){
     </div>`
 }
 
-document.querySelector('#app').innerHTML = `
-    <header>
-        <img src="./assets/logo.svg" alt="">
-        <h1>Calendário</h1>
-        </header>
-    <main id="cards">
-        ${createCard('24/11', 'segunda',
+document.querySelector('#cards').innerHTML = 
+  
+        createCard('24/11', 'segunda',
             createGame('brazil', '8:00', 'portugal') +
             createGame('paraguay', '12:00', 'germany') +
-            createGame('peru', '16:00', 'england')
-        )}
-        ${createCard('28/11', 'quinta', 
+            createGame('peru', '16:00', 'england'))
+
+        +createCard('28/11', 'quinta', 
             createGame('uruguay', '13:00', 'argentina') +
             createGame('andorra', '15:00', 'belgium') +
-            createGame('albania', '20:00', 'angola')
-        )}
-        ${createCard('10/12', 'sábado',
+            createGame('albania', '20:00', 'angola'))
+
+        +createCard('10/12', 'sábado',
             createGame('italy', '16:00', 'chile') + 
             createGame('armenia', '18:00', 'austria') +
-            createGame('aruba', '22:00', 'australia')
-        )}
-    </main>`
+            createGame('aruba', '22:00', 'australia'))
+        
