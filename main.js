@@ -1,53 +1,53 @@
 function createGame(player1, hour, player2) {
-    return `
-            <li>
-            <img src="./assets/icon=${player1}.svg" alt="#">
-            <strong>${hour}</strong>
-            <img src="./assets/icon=${player2}.svg" alt="#">
-            </li>
-          `
+  return `
+    <li>
+      <img src="./assets/icon=${player1}.svg" alt="Bandeira do ${player1}" />
+      <strong>${hour}</strong>
+      <img src="./assets/icon=${player2}.svg" alt="Bandeira da ${player2}" />
+    </li>
+  `
 }
 
-let delay = -0.4;
-function createCard(date, day, games){
-    delay = delay + -0.4;
-    return `
-    <div class="card" style="animatin-delay: ${delay}s">
-        <h2>${date}<span>${day}</span></h2>
-            <ul>
-              ${games}
-            </ul>
+let delay = -0.4
+function createCard(date, day, games) {
+  delay = delay + 0.4
+  return `
+    <div class="card" style="animation-delay: ${delay}s">
+      <h2>${date} <span>${day}</span></h2>
+      <ul>
+        ${games}
+      </ul>
     </div>
-    `
+  `
 }
 
 document.querySelector("#cards").innerHTML =
   createCard(
     "24/11",
-    "segunda",
-    createGame("brazil", "8:00", "portugal") +
-      createGame("paraguay", "12:00", "germany") +
-      createGame("peru", "16:00", "england")
+    "quinta",
+    createGame("brazil", "6:00", "serbia") +
+      createGame("germany", "17:00", "uruguay") +
+      createGame("brazil", "19:00", "serbia")
   ) +
   createCard(
     "28/11",
-    "quinta",
-    createGame("uruguay", "13:00", "argentina") +
-      createGame("andorra", "15:00", "belgium") +
-      createGame("albania", "20:00", "angola")
+    "segunda",
+    createGame("switzerland", "13:00", "brazil") +
+      createGame("portugal", "20:00", "uruguay") +
+      createGame("portugal", "22:00", "uruguay")
   ) +
   createCard(
-    "10/12",
-    "sábado",
-    createGame("italy", "16:00", "chile") +
-      createGame("armenia", "18:00", "austria") +
-      createGame("aruba", "22:00", "australia")
+    "02/12",
+    "sexta",
+    createGame("brazil", "8:00", "cameroon") +
+      createGame("portugal", "12:00", "uruguay") +
+      createGame("portugal", "16:00", "uruguay")
   ) +
   createCard(
-    "11/12",
-    "Domingo",
-    createGame("algeria", "17:00", "anguilla") +
-      createGame("bahrain", "19:00", "barbados") +
-      createGame("benin", "21:00", "bermuda")
+    "12/12",
+    "segunda",
+    createGame("brazil", "16:00", "cameroon") +
+      createGame("portugal", "18:00", "uruguay") +
+      createGame("portugal", "21:00", "uruguay")
   )
-        
+
