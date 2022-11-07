@@ -1,24 +1,24 @@
 function createGame(player1, hour, player2) {
     return `
-        <li>
+            <li>
             <img src="./assets/icon=${player1}.svg" alt="#">
             <strong>${hour}</strong>
             <img src="./assets/icon=${player2}.svg" alt="#">
-        </li>
-    `
+            </li>
+          `
 }
 
-let delay = 0.3;
-
+let delay = -0.4;
 function createCard(date, day, games){
-    delay = delay + 0.3;
+    delay = delay + -0.4;
     return `
     <div class="card" style="animatin-delay: ${delay}s">
         <h2>${date}<span>${day}</span></h2>
             <ul>
-                ${games}
+              ${games}
             </ul>
-    </div>`
+    </div>
+    `
 }
 
 document.querySelector("#cards").innerHTML =
