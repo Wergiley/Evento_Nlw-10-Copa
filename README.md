@@ -1,2 +1,2 @@
-# laboratorio-html-css-javascript - com NLW
+# NLW - Projeto Copa
 # https://wergiley.github.io/laboratorio-html-css-javascript/
