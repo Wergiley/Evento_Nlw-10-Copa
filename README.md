@@ -1,3 +1,3 @@
 # NLW - Projeto Copa Cards - Calendário de Jogos
-# https://wergiley.github.io/nlw-10-copa/
+ Link: https://wergiley.github.io/Evento_Nlw-10-Copa/
 - Projeto será aprimorado em breve.
